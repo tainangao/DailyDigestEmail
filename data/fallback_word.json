@@ -1,0 +1,18 @@
+{
+  'noun': {
+    'phrase': 'throng',
+    'definition': [
+      'a multitude of assembled persons',
+      'a large number : host',
+      'a crowding together of many persons'
+    ]
+  },
+  'verb': {
+    'phrase': 'throng',
+    'definition': [
+      'to crowd upon : press',
+      'to crowd into : pack',
+      'to crowd together in great numbers'
+    ]
+  }
+}
