@@ -14,4 +14,4 @@ Running this program locally
 
 Running this program on the Cloud
 
-- Ideally this application should be hosted on the Cloud. An Airflow DAG should be built to run the job `@daily`.
+- Ideally this application should be hosted on the Cloud. An Airflow DAG should be built to run the job `@daily`. Due to monetary considerations, this step is omitted.
