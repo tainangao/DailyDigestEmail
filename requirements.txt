@@ -1,4 +1,2 @@
 requests
-praw
-logging
 python-decouple

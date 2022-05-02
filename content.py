@@ -21,6 +21,8 @@ logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 
+# TODO: write README
+
 def get_quote(quites_file: str = 'data/quotes_JBP.csv') -> dict:
     """
     generate a random quote

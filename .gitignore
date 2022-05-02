@@ -1,3 +1,5 @@
 .env
 format*
 message_*
+.idea
+__pycache__
