@@ -1,6 +1,10 @@
 # DailyDigestEmail
 
-Send curated email programmatically to recipients.
+Send curated email programmatically to recipients. Email content includes - 
+
+- an inspiration quote
+- a link to a Reddit post
+- definitions and phrases related to an advanced English word
 
 ## Quick Start
 
