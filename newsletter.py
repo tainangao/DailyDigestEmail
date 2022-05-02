@@ -1,38 +1,23 @@
 """
-content
+ENHANCEMENT IDEAS
+- content
+    - more quotes
     - jokes
     - memes
     - inspirational quotes
         (from anime?)
         different language?
-    - vocabulary
     - stats question & answer
-    - forecast
-    - reddit trending posts
-email
-    - recipients: list
-    - send_time: time
-    - format_message()
-    - send_email()
-GUI
-    - config_content()
-    - add_recipients()
-    - remove_recipients()
-    - schedule_time()
-    - config_credentials()
+    - forecast (local city vs. dream city)
 
 - allow recipients to individually customize which content to include
-    - types of quotes
 - customize weather forecast location to each recipient
 - customize send time based on recipient's time zone
-- enrich word list
--
 
 Admin-related enhancements
 - indicate when certain content is unavailable
 - save config settings between program runs
 - enable running the program as a scheduled service
-- store sensitive information in a secure format
 """
 import content
 import datetime as dt
@@ -55,8 +40,6 @@ class DailyDigestEmail:
             'word': {'include': True, 'content': content.get_random_word()},
         }
         self.recipient_list = config('EMAIL_RECIPIENTS')
-        # self.sender_credentials = {'email': 'jyhuang.49@gmail.com',
-        #                            'password': 'stay17YOUNG!'}
         self.sender_credentials = {'email': config('EMAIL_SENDER_ADDRESS'),
                                    'password': config('EMAIL_SENDER_PASSWORD')}
 
@@ -72,7 +55,6 @@ class DailyDigestEmail:
         msg = EmailMessage()
         msg['Subject'] = f'Daily Digest - {dt.date.today().strftime("%B %-d, %Y")}'
         msg['From'] = self.sender_credentials['email']
-        # msg['To'] = ', '.join(self.recipient_list)
         msg['To'] = self.recipient_list
 
         # add plaintext and HTML content
